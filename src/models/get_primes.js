@@ -1,8 +1,12 @@
 const isPrime = require('./is_prime');
 
 const getPrimes = (numberNeeded) => {
-    let array = [2];
-    let counter = 3;
+    if(numberNeeded < 1) {
+        console.log(`Input of ${numberNeeded} is too small`)
+        return [];
+    }
+    let array = [2, 3];
+    let counter = 5;
     while (array.length < numberNeeded + 1) {
         if (isPrime(counter)) {
             array.push(counter);

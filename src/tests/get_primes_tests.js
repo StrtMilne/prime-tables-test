@@ -16,4 +16,14 @@ describe("Prime finder function", () => {
         const actual = getPrimes(5);
         assert.deepStrictEqual(actual, [2, 3, 5, 7, 11, 13]);
     })
+
+    it("Should return empty array when number entered is 0", () => {
+        const actual = getPrimes(0);
+        assert.deepStrictEqual(actual, []);
+    })
+
+    it("Should return empty array when number entered is negative", () => {
+        const actual = getPrimes(-10);
+        assert.deepStrictEqual(actual, []);
+    })
 });
