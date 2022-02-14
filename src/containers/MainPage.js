@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "../components/Form";
 import Table from "../components/Table";
+import createTable from "../models/create_table_rows";
 
 const MainPage = function() {
 
@@ -15,7 +16,10 @@ const MainPage = function() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setTableValues(numberOfPrimes);
+        console.log("number of primes: ", numberOfPrimes);
+        let table = createTable(numberOfPrimes);
+        console.log("table created: ", table);
+        setTableValues(table);
     };
 
     return (
