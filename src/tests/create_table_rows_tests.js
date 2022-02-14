@@ -1,5 +1,5 @@
-const assert = require('assert');
-const createTable = require('../models/create_table_rows')
+const assert = require("assert");
+const createTable = require("../models/create_table_rows");
 
 
 describe("Matrix of primes table function", () => {

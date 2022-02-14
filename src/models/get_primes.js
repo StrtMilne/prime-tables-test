@@ -1,4 +1,4 @@
-const isPrime = require('./is_prime');
+const isPrime = require("./is_prime");
 
 const getPrimes = (numberNeeded) => {
     if(numberNeeded < 1) {

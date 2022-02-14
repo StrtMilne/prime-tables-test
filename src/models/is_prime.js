@@ -1,4 +1,7 @@
 const isPrime = (numberToCheck) => {
+    if(numberToCheck < 2){
+        return false;
+    }
     for (let i = 2; i < numberToCheck; i++) {
         if (numberToCheck % i === 0){
             

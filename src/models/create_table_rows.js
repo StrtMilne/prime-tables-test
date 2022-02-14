@@ -1,5 +1,6 @@
-const getPrimes = require('./get_primes');
+const getPrimes = require("./get_primes");
 
+//Creates array of table rows to be displayed
 const createTable = (numberNeeded) => {
     if(numberNeeded < 1){
         return [];

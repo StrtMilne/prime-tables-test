@@ -1,5 +1,5 @@
-const assert = require('assert');
-const getPrimes = require('../models/get_primes');
+const assert = require("assert");
+const getPrimes = require("../models/get_primes");
 
 describe("Prime array function", () => {
     it("Should output an array of length 2 when 1 inputted", () => {
