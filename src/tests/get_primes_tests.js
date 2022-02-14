@@ -1,7 +1,7 @@
 const assert = require('assert');
 const getPrimes = require('../models/get_primes');
 
-describe("Prime finder function", () => {
+describe("Prime array function", () => {
     it("Should output an array of length 2 when 1 inputted", () => {
         const actual = getPrimes(2).length;
         assert.strictEqual(actual, 3);
