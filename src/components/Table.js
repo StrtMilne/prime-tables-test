@@ -1,8 +1,16 @@
 import React from "react";
+import TableRow from "./TableRow";
 
-const Table = function() {
+const Table = function({ tableValues }) {
+
+    const tableRows = tableValues.map((row, index) => {
+        return <TableRow row={row} key={index}/>
+    });
+
     return(
-        <h1>Table</h1>
+        <table>
+            {tableRows}
+        </table>
     )
 }
 

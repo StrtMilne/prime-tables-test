@@ -4,7 +4,6 @@ const getPrimes = require("./get_primes");
 const createTable = (input) => {
 
     let numberNeeded = parseInt(input);
-    console.log("in create table function, number passed is: ", numberNeeded);
     if(numberNeeded < 1){
         return [];
     }

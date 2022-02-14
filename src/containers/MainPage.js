@@ -16,9 +16,7 @@ const MainPage = function() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("number of primes: ", numberOfPrimes);
         let table = createTable(numberOfPrimes);
-        console.log("table created: ", table);
         setTableValues(table);
     };
 
