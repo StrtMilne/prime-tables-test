@@ -1,0 +1,27 @@
+.table {
+  background-color: #f3f0ec;
+  border: 2px solid black;
+}
+
+.row {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.row0 {
+  background-color: rgb(96, 163, 142);
+  color: white;
+}
+
+.element {
+  border: 1px solid black;
+  margin: 0px;
+  text-align: center;
+  padding: 2px;
+}
+
+.key0 {
+  background-color: rgb(96, 163, 142);
+  color: white;
+}

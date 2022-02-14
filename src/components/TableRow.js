@@ -1,16 +1,21 @@
 import React from "react";
 import TableElement from "./TableElement";
+import "./styles/TableStyle.css"
 
-const TableRow = function ({ row, key }) {
+const TableRow = function ({ row, index }) {
 
     let tableElements = row.map((value, index) => {
-        return <TableElement value={value} key={index}/>
+        return <TableElement value={value} key={index} index={index}/>
     })
 
+    let cssClass = `row${index}`;
+
     return (
-        <tr>
-            {tableElements}
-        </tr>
+        <tbody>
+            <tr className={cssClass}>
+                {tableElements}
+            </tr>
+        </tbody>
     )
 }
 

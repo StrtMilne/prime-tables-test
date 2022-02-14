@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Form from "../components/Form";
 import Table from "../components/Table";
 import createTable from "../models/create_table_rows";
+import "./static/MainPageStyle.css";
 
 const MainPage = function() {
 
     const [numberOfPrimes, setNumberOfPrimes] = useState();
-    const [tableValues, setTableValues] = useState();
+    const [tableValues, setTableValues] = useState("");
 
 
     const handleUserInput = (event) => {
@@ -21,10 +22,11 @@ const MainPage = function() {
     };
 
     return (
-        <>
+        <div className="main-page">
             <Form handleSubmit={handleSubmit} handleUserInput={handleUserInput}/>
-            <Table tableValues={tableValues}/>
-        </>
+            {tableValues===""? <h4>Please enter a value greater than 0!</h4> :
+                <Table tableValues={tableValues}/> }
+        </div>
     );
 }
 
