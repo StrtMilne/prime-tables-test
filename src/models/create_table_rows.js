@@ -13,7 +13,7 @@ const createTable = (input) => {
     let result = [row1];
     let tempRow = [1, ...numbers];
 
-    for (let i = 0; i < numberNeeded + 1; i ++) {
+    for (let i = 0; i < numberNeeded; i ++) {
         let rowToAdd = tempRow.map(number => number * numbers[i]);
         result.push(rowToAdd);
 

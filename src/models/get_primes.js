@@ -9,7 +9,7 @@ const getPrimes = (input) => {
     }
     let array = [2, 3];
     let counter = 5;
-    while (array.length < numberNeeded + 1) {
+    while (array.length < numberNeeded) {
         if (isPrime(counter)) {
             array.push(counter);
             counter += 2;
