@@ -16,6 +16,9 @@ const createTable = (input) => {
     for (let i = 0; i < numberNeeded + 1; i ++) {
         let rowToAdd = tempRow.map(number => number * numbers[i]);
         result.push(rowToAdd);
+
+        //tempRow.shift();
+        //tempRow.push()
     }
     return result;
 }

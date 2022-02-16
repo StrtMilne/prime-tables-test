@@ -4,9 +4,8 @@ const isPrime = (numberToCheck) => {
     }
 
     // Check that all numbers up to floored square root of given number don't divide into the number
-    // Starts at 5 as getPrimes function will never need to check before that number 
     
-    for (let i = 5; i <= Math.floor(Math.sqrt(numberToCheck)); i++) {
+    for (let i = 2; i <= Math.floor(Math.sqrt(numberToCheck)); i++) {
         if (numberToCheck % i === 0){
             
             return false;

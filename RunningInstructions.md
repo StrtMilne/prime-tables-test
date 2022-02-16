@@ -39,7 +39,7 @@ To run end-to-end tests while in your route directory for the application and, i
 ## Pleased
 
 - TDD ensured that any logic errors in code could be found and rectified in a timely manner
-- Code structured with single responsibility in mind so algorithms could be changed.
+- Code structured with single responsibilities in mind so algorithms could be changed.
 - Code structured so that it is readable without excessive commenting
 - Fairly broad testing bases for unit and end-to-end testing
 - Neat logic for producing matrix for table to display
@@ -48,5 +48,6 @@ To run end-to-end tests while in your route directory for the application and, i
 
 - Further unit and end-to-end testing to ensure code operates as intended in all cases
 - More efficient means of calculating primes - probably using mathematical sieves
+- More efficient way of building table as it's most time consuming operation
 - Set up pipeline for CI/CD
 - Improved styling with greater time
