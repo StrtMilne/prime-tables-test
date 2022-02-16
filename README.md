@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Running Instruction for Prime Tables test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Set-up
 
-## Available Scripts
+This application requires NodeJS to run. If you d not have Node on you machine please download it. For more information and to do so please visit: https://nodejs.org/en/download/.
 
-In the project directory, you can run:
+Please clone this repository to your machine from GitHub.
 
-### `npm start`
+In the terminal navigate to the folder you have cloned the repository to and run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm i`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+...to download relevant dependencies.
 
-### `npm test`
+## To run the application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+While in your route directory for the application, in the terminal, run:
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This should open a browser window with the application running.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If it does not, please visit: [http://localhost:3000/].
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You will be able to enter a positive integer
 
-### `npm run eject`
+## Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run unit tests, while in your route directory for the application and, in the terminal, run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run mocha-tests`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run end-to-end tests while in your route directory for the application and, in the terminal, run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`npm run cypress-tests`
 
-## Learn More
+# What I am pleased with and what I could improve/extend on
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Pleased
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- TDD ensured that any logic errors in code could be found and rectified in a timely manner
+- Code structured with single responsibilities in mind so algorithms could be changed.
+- Code structured so that it is readable without excessive commenting
+- Fairly broad testing bases for unit and end-to-end testing
+- Neat logic for producing matrix for table to display
 
-### Code Splitting
+## To improve
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Further unit and end-to-end testing to ensure code operates as intended in all cases
+- More efficient means of calculating primes - probably using mathematical sieves
+- More efficient way of building table as it's most time consuming operation
+- Set up pipeline for CI/CD
+- Improved styling with greater time
