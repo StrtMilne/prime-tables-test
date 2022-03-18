@@ -7,8 +7,8 @@ const getPrimes = (input) => {
         console.log(`Input of ${numberNeeded} is too small`)
         return [];
     }
-    let array = [2, 3];
-    let counter = 5;
+    let array = [2];
+    let counter = 3;
     while (array.length < numberNeeded) {
         if (isPrime(counter)) {
             array.push(counter);
