@@ -39,22 +39,22 @@ describe("Prime tables end to end tests", () => {
         table.should("exist");
     })
 
-    it("Should be able to input values and result in table with number of rows n + 2", () => {
+    it("Should be able to input values and result in table with number of rows n + 1", () => {
         const inputBar = cy.get(".input-bar")
         inputBar.type("6");
         const form = cy.get("form");
         form.submit();
         const numberOfRows = cy.get("table").find("tr");
-        numberOfRows.should("have.length", 8);
+        numberOfRows.should("have.length", 7);
     })
 
-    it("Should be able to input values and result in table with number of rows (n + 2) squared", () => {
+    it("Should be able to input values and result in table with number of rows (n + 1)", () => {
         const inputBar = cy.get(".input-bar")
         inputBar.type("8");
         const form = cy.get("form");
         form.submit();
         const row = cy.get("table").find("tr").find("td");
-        row.should("have.length", 100);
+        row.should("have.length", 81);
     })
     
   })
